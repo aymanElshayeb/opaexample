@@ -18,7 +18,7 @@ Before deploying the application, make sure you have the following prerequisites
 git clone https://github.com/aymanElshayeb/opaexample.git
 ```
 
-### 2. Create OPA Policy
+### 2. Create OPA Policy[optional]
 
 Place your OPA policy files in a directory named `opa-policy` in the root of your project.
 
