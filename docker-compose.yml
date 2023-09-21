@@ -1,0 +1,14 @@
+version: '3'
+services:
+  opa-python-example:
+    build:
+      context: .
+    ports:
+      - "80:80"
+  opa:
+    image: openpolicyagent/opa:latest
+    volumes:
+      - ./opa-policy:/policy
+    command: ["run", "--server", "/policy"]
+    ports:
+      - "8181:8181"
